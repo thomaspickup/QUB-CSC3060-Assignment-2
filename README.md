@@ -34,8 +34,25 @@ These data consist of:
     * a png image of the item (which may be useful for data cleaning).
 * a dataset of 140 test items for each of the 21 symbols, in a random order (2940 test items in total). Note that the symbol labels have been set to “00” for these items – you do not have access to the correct label for these items! These test items are to be used for Section 4 below.
 
-### Section 3
+In this section, you are to perform classification with respect to the 21 symbol categories.
 
+#### Section 2.1
+Perform k-nearest-neighbour classification with k = {1,3,5,7,9,11,15,19,23,31} on the training set, using the first 10 features in the “*-features.csv” files (note that the first 2 columns are just the label and the index; the features start from the third column). Report the accuracy over the training set for each value of k (do not worry in this subsection about overfitting to the training data).
+
+#### Section 2.2
+Perform k-nearest-neighbour classification with k = {1,3,5,7,9,11,15,19,23,31} using 5-fold cross- validation, using the same 10 features as in 2.1. Report the cross-validated accuracy for each value of k. Create a figure similar to FIGURE 2.17 of the ISLR text book, showing the classification error rate over the training set and the cross-validated classification error rate for each value of 1/k. Briefly interpret the results of 2.1 and 2.2 with reference to your graph.
+
+#### Section 2.3
+Find out how often each symbol is confused for each other symbol, on the basis of your cross- validated results from Section 2.2 (using the value of k that gave the best overall cross-validated accuracy). Consider suitable ways of visualising the results. Report the pair of digits that are the most confusable in the dataset, on the basis of your cross-validation results (using the value of k that gave the best accuracy).
+
+### Section 3
+In this section, you are to perform classification with respect to the 21 symbol categories.
+
+#### Section 3.1
+Perform classification using bagging of decision trees using 5-fold cross-validation. Evaluate the resulting model using number of bags = {25, 50, 200, 400}. Report the accuracy of your model using both out-of-bag estimation and cross-validation. Briefly explain and interpret the results for this set of models.
+
+#### Section 3.2
+Perform classification with random forests using 5-fold cross-validation. Calculate multiple random forest solutions using number of trees between 25 and 400 (increments of 5) and number of predictors considered at each node = {2, 4, 6, 8}. Evaluate the models using cross-validation. Find the combination of tree-number and predictor-number giving the best cross-validated accuracy (this is called a “grid search” of the two hyper-parameters, number of trees and number of predictors). Briefly visualise, explain and interpret the results for this set of models.
 
 ### Section 4
 Build a model that predicts the symbol for each of the test items. You can use any set of features you wish, explaining and justifying your choices. Your goal is to try to come up with the best final model you can for classifying symbols. If you created custom features or combinations of features that were useful for discriminating symbols in Assignment 1, you may wish to consider those again here. You are free to use any methods you like (clearly explaining and justifying your choices). You may wish to consider random forests and/or dimensionality reduction. Put your predictions in a file called STUDENTNR_section4_predictions.csv. The format of this file should be one item index followed by one symbol label per line, comma-delimited. Each line corresponds to the prediction you make for each of the 2940 test items (e.g. the first line might be “000,23”, indicating you predict label “11” for test item 000). The number of lines must match the number of test items, and the order of lines much match the indices for the test items. This section may be completed using R (recommended), Python or Java.
