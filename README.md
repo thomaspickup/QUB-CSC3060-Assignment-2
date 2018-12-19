@@ -24,6 +24,22 @@ How do your model accuracies compare to a simple model that classifies everythin
 #### Section 1.5
 Extend your 8-feature solution to 1.3 to investigate (a) how often each of 7 digits are incorrectly classified as “letter” and (b) how often each of the 7 letter symbols are incorrectly classified as “digit”. Are there any interesting patterns in this accuracy data? 
 
+### Section 2
+Larger sets of training and test symbol data have been created for you. You can download the data at the URL that was emailed to you. These data are for your use only and should not be shared with others (to use other people’s data will be considered collusion). These data are to be used in Sections 2, 3 & 4.
+
+These data consist of:
+* a dataset of 420 training items for each of the 21 symbols (8820 training items in total). The features are in the same format as Assignment 1. You can ignore the last three features (the custom features from Assignment 1), which have been set to 0. For each training instance there are three files:
+** the features of the image, as described in Assignment 1
+** the pixels of the image (which you can use to calculate additional custom features that you think may be useful for classification, if you wish).
+** a png image of the item (which may be useful for data cleaning).
+* a dataset of 140 test items for each of the 21 symbols, in a random order (2940 test items in total). Note that the symbol labels have been set to “00” for these items – you do not have access to the correct label for these items! These test items are to be used for Section 4 below.
+
+### Section 3
+
+
+### Section 4
+Build a model that predicts the symbol for each of the test items. You can use any set of features you wish, explaining and justifying your choices. Your goal is to try to come up with the best final model you can for classifying symbols. If you created custom features or combinations of features that were useful for discriminating symbols in Assignment 1, you may wish to consider those again here. You are free to use any methods you like (clearly explaining and justifying your choices). You may wish to consider random forests and/or dimensionality reduction. Put your predictions in a file called STUDENTNR_section4_predictions.csv. The format of this file should be one item index followed by one symbol label per line, comma-delimited. Each line corresponds to the prediction you make for each of the 2940 test items (e.g. the first line might be “000,23”, indicating you predict label “11” for test item 000). The number of lines must match the number of test items, and the order of lines much match the indices for the test items. This section may be completed using R (recommended), Python or Java.
+
 ## Usage
 ### Folder Structure
 ```bash
