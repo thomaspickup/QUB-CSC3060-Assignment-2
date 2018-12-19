@@ -8,6 +8,7 @@ With the exception of Section 4, this assignment must be completed in R. Section
 
 ## Usage
 ### Folder Structure
+```bash
 ├── 40145342_assignment2_report.pdf
 ├── 40145342_section4_predictions.txt
 ├── section1_code
@@ -23,6 +24,7 @@ With the exception of Section 4, this assignment must be completed in R. Section
 |   ├── 
 |   └──
 └── training_dataset
+```
 
 ## ToDo
 
