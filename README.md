@@ -29,9 +29,9 @@ Larger sets of training and test symbol data have been created for you. You can 
 
 These data consist of:
 * a dataset of 420 training items for each of the 21 symbols (8820 training items in total). The features are in the same format as Assignment 1. You can ignore the last three features (the custom features from Assignment 1), which have been set to 0. For each training instance there are three files:
-** the features of the image, as described in Assignment 1
-** the pixels of the image (which you can use to calculate additional custom features that you think may be useful for classification, if you wish).
-** a png image of the item (which may be useful for data cleaning).
+    * the features of the image, as described in Assignment 1
+    * the pixels of the image (which you can use to calculate additional custom features that you think may be useful for classification, if you wish).
+    * a png image of the item (which may be useful for data cleaning).
 * a dataset of 140 test items for each of the 21 symbols, in a random order (2940 test items in total). Note that the symbol labels have been set to “00” for these items – you do not have access to the correct label for these items! These test items are to be used for Section 4 below.
 
 ### Section 3
