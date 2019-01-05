@@ -49,5 +49,3 @@ for (k in ks){
 accuracies.dataframe = as.data.frame(t(accuracies))
 cbind(accuracies.dataframe, ks)
 ggplot(accuracies.dataframe, aes(x=ks, y=V1)) + geom_bar(stat = "identity")
-setwd(section_code.location)
-ggsave("part1_accuracy_graph.png")
