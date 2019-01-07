@@ -47,7 +47,7 @@ for (k in ks){
 
 # Plots as a bar chart
 accuracies.dataframe = as.data.frame(t(accuracies))
-cbind(accuracies.dataframe, ks)
+accuracies.dataframe = cbind(accuracies.dataframe, ks)
 ggplot(accuracies.dataframe, aes(x=ks, y=V1)) + geom_bar(stat = "identity")
 setwd(section_code.location)
 ggsave("part1_accuracy_graph.png")
