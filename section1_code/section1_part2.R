@@ -52,4 +52,4 @@ ggplot(results, aes(x = proportion, y = values)) + geom_bar(position = 'dodge', 
 
 # Change workspace to section_code and then saves plot
 setwd(section_code.location)
-ggsave("part1_accuracy_graph.png")
+ggsave("part2_accuracy_graph.png")
